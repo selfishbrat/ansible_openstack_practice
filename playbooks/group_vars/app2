@@ -1,2 +1,10 @@
-group: apps
+#chosen_jumphost: "{{ groups.jumpbox | first }}"
+chosen_jumphost: "workstation-e49d.rhpds.opentlc.com"
 
+server_name: app2
+server_group: apps
+cloud: opscloud
+security_group: apps
+deployment_name: QA
+flavor_name: m2.small
+image: rhel-guest

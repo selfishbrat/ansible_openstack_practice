@@ -1,0 +1,11 @@
+---
+- name: create instance
+  hosts: localhost
+  gather_facts: false
+  become: yes
+  roles:
+    - { "role": roles/osp_create_instances, "vars_file": "group_vars/app1" }
+    - { "role": roles/osp_create_instances, "vars_file": "group_vars/app2" }
+    - { "role": roles/osp_create_instances, "vars_file": "group_vars/frontend" }
+    - { "role": roles/osp_create_instances, "vars_file": "group_vars/db" }
+  

@@ -1,3 +1,5 @@
+chosen_jumphost: "{{ groups.jumpbox | first }}"
+
 server_details:
  - { server_name: app1, server_group: apps, cloud: opscloud, security_group: apps, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }
  - { server_name: app2, server_group: apps, cloud: opscloud, security_group: apps, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }
