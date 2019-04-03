@@ -1,0 +1,5 @@
+server_details:
+ - { server_name: app1, server_group: apps, cloud: opscloud, security_group: apps, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }
+ - { server_name: app2, server_group: apps, cloud: opscloud, security_group: apps, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }
+ - { server_name: db, server_group: appdbs, cloud: opscloud, security_group: appdbs, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }
+ - { server_name: frontend, server_group: frontends, cloud: opscloud, security_group: frontends, deployment_name: QA, flavor_name: m2.small, image: rhel-guest }

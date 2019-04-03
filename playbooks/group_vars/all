@@ -1,0 +1,11 @@
+deployment_name: "QA"
+flavor_name: "m2.small"
+keypair: "ansible_ssh"
+private_network: 20.20.20.0/24
+internal_network: 10.10.10.0/24
+image: rhel-guest
+open_ports:
+ - "8080/tcp"
+ - "22/tcp"
+ - "icmp"
+
