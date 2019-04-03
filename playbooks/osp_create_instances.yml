@@ -8,18 +8,26 @@
     include_role:
       name: roles/osp_create_instances
       vars_from: app1
+    tags:
+      - create_apps
   
   - name: Create app2
     include_role:
       name: roles/osp_create_instances
       vars_from: app2
+    tags:
+      - create_apps
 
   - name: Create frontend
     include_role:
       name: roles/osp_create_instances
       vars_from: frontend
+    tags:
+      - create_lb
 
   - name: Create db
     include_role:
       name: roles/osp_create_instances
       vars_from: db
+    tags:
+      - create_db

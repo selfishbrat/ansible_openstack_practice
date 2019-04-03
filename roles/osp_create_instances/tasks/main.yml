@@ -8,7 +8,7 @@
         image: "{{ image }}"
         meta: "group={{ server_group }},deployment_name={{ deployment_name }}"
         flavor: "{{ flavor_name }}"
-        security_groups: apps
+        security_groups: "{{ security_group }}"
         key_name: ansible_ssh
         nics:
         - net-name: int_network

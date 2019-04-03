@@ -4,7 +4,7 @@ chosen_jumphost: "{{ groups.jumpbox | first }}"
 server_name: db
 server_group: appdbs
 cloud: ospcloud
-security_group: appdbs
+security_group: db
 deployment_name: QA
 flavor_name: m2.small
 image: rhel-guest

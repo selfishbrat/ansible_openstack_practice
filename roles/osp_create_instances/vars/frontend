@@ -4,7 +4,7 @@ chosen_jumphost: "{{ groups.jumpbox | first }}"
 server_name: frontend
 server_group: frontends
 cloud: ospcloud
-security_group: frontends
+security_group: frontend
 deployment_name: QA
 flavor_name: m2.small
 image: rhel-guest
