@@ -1,5 +1,5 @@
-#chosen_jumphost: "{{ groups.jumpbox | first }}"
-chosen_jumphost: "workstation-e49d.rhpds.opentlc.com"
+chosen_jumphost: "{{ groups.jumpbox | first }}"
+#chosen_jumphost: "workstation-e49d.rhpds.opentlc.com"
 
 server_name: app2
 server_group: apps

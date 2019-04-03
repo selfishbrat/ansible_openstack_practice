@@ -1,9 +1,9 @@
-#chosen_jumphost: "{{ groups.jumpbox | first }}"
-chosen_jumphost: "workstation-e49d.rhpds.opentlc.com"
+chosen_jumphost: "{{ groups.jumpbox | first }}"
+#chosen_jumphost: "workstation-e49d.rhpds.opentlc.com"
 
 server_name: frontend
 server_group: frontends
-cloud: opscloud
+cloud: ospcloud
 security_group: frontends
 deployment_name: QA
 flavor_name: m2.small
